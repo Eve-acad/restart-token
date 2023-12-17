@@ -35,10 +35,11 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
     /* Adjust as needed */
 }
 
+/* Existing styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,19 +56,44 @@ nav ul li {
     margin-left: 50px;
 }
 
-/* Add this CSS rule to underline links on hover */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    /* White text color for links */
+    color: #fff; /* White text color for links */
 }
 
+header {
+    background: rgba(0, 0, 0, 0.884); /* Black background with 70% opacity */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 60px; /* Even smaller logo on mobile */
+    }
+
+    nav ul li a {
+        padding: 0 5px; /* Further reduce padding for small screens */
+        font-size: 0.7em; /* Even smaller font size for links on mobile */
+    }
+
+    /* Adjust navbar padding on smaller screens */
+    .navbar {
+        padding: 0 10px;
+    }
+}
+
+
 .hero {
-    padding: 290px 0;
+    padding: 230px 0;
     /* Increase the top and bottom padding for a taller section */
     text-align: center;
     background-image: url('bg.jpg');
@@ -121,6 +147,12 @@ nav ul li a {
     font-size: 300px;
 }
 
+@media (max-width: 600px) {
+    .memes h2 {
+        font-size: 30px; /* Smaller font size for mobile devices */
+    }
+}
+
 .meme-gallery img {
     margin: 20px;
     /* Increase the margin around the pictures */
@@ -140,7 +172,7 @@ footer {
     /* Black background with 70% opacity */
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -159,13 +191,13 @@ footer {
 }
 
 .social-icon {
-    margin-right: 10px;
+    margin-right: 40px;
     color: #fff;
     /* Set the default color for the icons */
     transition: color 0.3s ease;
     /* Add a transition for smooth color change */
 
-    font-size: 21px;
+    font-size: 30px;
     /* Increase the font size for the text */
 
 }
@@ -174,6 +206,27 @@ footer {
 .social-icon:hover {
     color: #00acee;
     /* Change the color to the desired hover color */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center the icons */
+        margin-left: 20px;
+        margin-top: 10px; /* Additional space between the text and icons */
+    }
+
+    .social-icon {
+        margin-right: 10px; /* Space out the icons a bit more if needed */
+        font-size: 18px; /* Slightly smaller icons on mobile */
+    }
+
+    .social-icon:last-child {
+        margin-right: 0; /* No margin on the right of the last icon */
+    }
 }
 
 .footer-content p {
