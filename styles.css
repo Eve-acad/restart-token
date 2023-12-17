@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: #000;
+    font-size: 16px;
+    /* Adjust as needed */
+    background: #fff;
+    /* Default background for the body */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.884);
+    /* Black background with 70% opacity */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bigger{
+    font-size: 39px;
+}
+
+.bigger2{
+    font-size: 50px;
+}
+
+.logo {
+    max-width: 100px;
+    /* Adjust as needed */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+/* Add this CSS rule to underline links on hover */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* White text color for links */
+}
+
+.hero {
+    padding: 290px 0;
+    /* Increase the top and bottom padding for a taller section */
+    text-align: center;
+    background-image: url('bg.jpg');
+    /* Background image for the hero section */
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with 50% opacity */
+    color: #fff;
+    margin-top: 10px;
+    /* Adjust based on header height */
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+.hero p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px 40px; /* Increase padding to make the button bigger */
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px; /* Increase the font size for the button text */
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.memes {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+    /* Increased top and bottom padding for more spacing */
+    text-align: center;
+}
+
+.memes h2 {
+    margin-bottom: 20px;
+    /* Add margin between "Memes" text and the pictures */
+    font-size: 300px;
+}
+
+.meme-gallery img {
+    margin: 20px;
+    /* Increase the margin around the pictures */
+    border: 3px solid #fff;
+    /* Optional for styling */
+    max-width: 100%;
+    /* Ensure responsiveness */
+    height: auto;
+}
+
+/* ... (your existing CSS rules) */
+
+/* ... (your existing CSS rules) */
+
+footer {
+    background: rgba(0, 0, 0, 0.849);
+    /* Black background with 70% opacity */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow content to wrap on smaller screens */
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #fff;
+    /* Set the default color for the icons */
+    transition: color 0.3s ease;
+    /* Add a transition for smooth color change */
+
+    font-size: 21px;
+    /* Increase the font size for the text */
+
+}
+
+/* Change the color on hover */
+.social-icon:hover {
+    color: #00acee;
+    /* Change the color to the desired hover color */
+}
+
+.footer-content p {
+    font-size: 20px;
+    /* Increase the font size for the text */
+}
