@@ -180,3 +180,25 @@ footer {
     font-size: 20px;
     /* Increase the font size for the text */
 }
+
+/* Style for the "Watch to not be smart" section */
+.watch {
+    background: #fff; /* White background */
+    padding: 60px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.watch h2 {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add margin between the heading and video */
+}
+
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    max-height: auto;
+}
